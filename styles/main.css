@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: url(../src/chivasClubGris.svg) fixed;
+}
+
+.container section {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container section .mainText {
+  width: 100%;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 4;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.container section .arrow {
+  width: 2%;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 6;
+}
+
+.trofeos .trofeos-container {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.trofeos .secondary-text {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 2;
+  width: 100%;
+}
+
+.trofeos .trofeo {
+  width: 80%;
+}
+
+.trofeos .hola {
+  font-size: 1.5em;
+  margin: 1em 0em;
+  visibility: hidden;
+}
+
+.trofeos .fecha-show {
+  visibility: initial;
+}
+
+.trofeos .trofeos-subcontainer {
+  text-align: center;
+}
+
+.trofeos .trofeos-subcontainer .arrowTrofeo {
+  width: 15%;
+  margin-right: 10%;
+  display: none;
+}
+
+.trofeos .trofeos-subcontainer .arrowTrofeoShow {
+  position: absolute;
+  display: block;
+  width: 1.5%;
+  margin: 0 3%;
+}
+/*# sourceMappingURL=main.css.map */
