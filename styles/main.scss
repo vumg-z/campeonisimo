@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
-$background: url(../src/chivasClubGris.svg) fixed;
+$background: url(../src/chivasClubGris.svg);
 
 @mixin gridAlign {
   height: 100vh;
@@ -16,6 +16,7 @@ $background: url(../src/chivasClubGris.svg) fixed;
   grid-row-end: $end;
 }
 
+
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -23,7 +24,7 @@ $background: url(../src/chivasClubGris.svg) fixed;
 }
 
 .container {
-  background: $background;
+   background: $background;
   section {
     @include gridAlign();
     .mainText {
@@ -39,11 +40,12 @@ $background: url(../src/chivasClubGris.svg) fixed;
 }
 
 .trofeos {
+  // background: $background;
   .trofeos-container {
     @include gridRowStart(4, 4);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-gap: 10px;
+    gap: 10px;
     text-align: center;
   }
 
@@ -58,7 +60,6 @@ $background: url(../src/chivasClubGris.svg) fixed;
 
   .hola {
     font-size: 1.5em;
-    margin: 1em 0em;
     visibility: hidden;
   }
 
@@ -79,6 +80,84 @@ $background: url(../src/chivasClubGris.svg) fixed;
       display: block;
       width: 1.5%;
       margin: 0 3%;
+    }
+  }
+
+  .campeones {
+    grid-template-columns: repeat(6, 1fr);
+    .trofeo-campeones {
+      margin: 0 1em;
+      width: 60%;
+    }
+  }
+
+  .copa-mexico {
+    grid-template-columns: repeat(2, 1fr);
+    .trofeo-copa {
+      width: 70%;
+    }
+  }
+
+  .copa-concacaf {
+    grid-template-columns: repeat(1, 1fr);
+    .trofeo-concacaf {
+      width: 70%;
+    }
+  }
+
+  .copa-challenger {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .copa-pentagonales {
+    grid-template-columns: repeat(3, 1fr);
+    .trofeo-pentagonales {
+      margin: 0 3em;
+      width: 40%;
+    }
+    .trofeo-guadalajara {
+      margin: 0 3em;
+      width: 40%;
+    }
+  }
+}
+
+
+.footer {
+  background: $background;
+  .textfooter {
+    width: 80%;
+    @include gridRowStart(2,2);
+  }
+  .trofeos-footer {
+    text-align: center;
+    @include gridRowStart(3,3);
+    #copa {
+      width: 13%;
+    }
+    #concacaf {
+      width: 8%;
+    }
+    #challenger {
+      width: 8%;
+    }
+    #campeones {
+      width: 6%;
+    }
+    #liga {
+      width: 10%;
+    }
+
+    img {
+      margin: 0 1em;
+    }
+  }
+
+  .footertext{
+    @include gridRowStart(5,5);
+    text-align: center;
+    .imgText{
+      width: 40em;
     }
   }
 }

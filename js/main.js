@@ -1,20 +1,16 @@
 let trofeo = {
   arrayTrofeos: [],
-  arrayFlechas: [],
   arrayFechas: [],
 
   getTrofeos: function() {
     const trofeos = document.querySelectorAll(".trofeo");
-    const flechas = document.querySelectorAll(".arrowTrofeo");
     const fechas = document.querySelectorAll(".hola");
 
     trofeos.forEach(trofeos => {
       this.arrayTrofeos.push(trofeos);
     });
 
-    flechas.forEach(flechas => {
-      this.arrayFlechas.push(flechas);
-    });
+   
 
     fechas.forEach(fechas => {
       this.arrayFechas.push(fechas);
@@ -37,29 +33,29 @@ let trofeo = {
   },
 
   arrow: function(num, mouseOver) {
-    let flecha = this.arrayFlechas[num];
+  
     let fecha = this.arrayFechas[num];
-
-    flecha.classList.add("arrowTrofeoShow");
     fecha.classList.add("fecha-show");
 
     if (mouseOver == true) {
-      flecha.classList.remove("arrowTrofeoShow");
+      
       fecha.classList.remove("fecha-show");
     }
   }
 };
 
-anime({
-  targets: ".trofeo",
-  translateX: [-1000, 0], 
-  delay: anime.stagger(100),
-  opacity: [0, 1],
+function showTrofeos(stagger, targets, x) {
+  anime({
+    targets: targets,
+    translateX: [x, 0],
+    delay: anime.stagger(stagger),
+    opacity: [0, 1],
 
-  complete: function() {
-    mainTrofeos();
-  }
-});
+    complete: function() {
+      mainTrofeos();
+    }
+  });
+}
 
 function mainTrofeos() {
   trofeo.getTrofeos();
@@ -67,7 +63,6 @@ function mainTrofeos() {
   trofeo.arrayTrofeos.forEach((arrayTrofeos, num) => {
     //mouse sobre el trofeo
     arrayTrofeos.addEventListener("mouseover", () => {
-      
       trofeo.arrow(num, false);
       trofeo.animate(arrayTrofeos, false);
     });
@@ -85,4 +80,66 @@ anime({
   direction: "alternate",
   loop: true,
   easing: "easeInOutSine"
+});
+
+//scroll fullpage.js
+
+new fullpage("#fullPage", {
+  //navegacion
+  autoScrolling: true,
+  controlArrows: true,
+  navigation: false,
+  scrollingSpeed: 800,
+
+  //diseño
+  verticalCentered: false,
+ 
+ 
+
+  onLeave: function(origin, destination, direction){
+		var leavingSection = this;
+
+		//after leaving section 1
+		if(origin.index == 0 && direction =='down'){
+			showTrofeos(100, "#trofeo", -50);
+    }
+    //after leaving section 2
+		if(origin.index == 1 && direction =='down'){
+        showTrofeos(100, ".trofeo-campeones", -100);
+    }
+    //after leaving section 3
+		if(origin.index == 2 && direction =='down'){
+      setTimeout( () => {
+        showTrofeos(400, ".trofeo-copa", -50);
+      },100)
+			
+    }
+    //after leaving section 4
+		if(origin.index == 3 && direction =='down'){
+      setTimeout( () => {
+        showTrofeos(300, ".trofeo-concacaf",-300);
+      }, 100)
+			
+    }
+    //after leaving section 5
+		if(origin.index == 4 && direction =='down'){
+			setTimeout( () => {
+        showTrofeos(300, ".trofeo-challenger",-300);
+      }, 100)
+    }
+    //after leaving section 6
+    if(origin.index == 5 && direction =='down'){
+        showTrofeos(300, ".trofeo-pentagonales",-50);
+    }
+    //after leaving section 7
+    if(origin.index == 6 && direction =='down'){
+      setTimeout( () => {
+        showTrofeos(300, ".trofeo-guadalajara",-300);
+      }, 100)
+  }
+   //after leaving section 8
+   if(origin.index == 7 && direction =='down'){
+    console.log("uri");
+}
+	}
 });

@@ -6,7 +6,7 @@
 }
 
 .container {
-  background: url(../src/chivasClubGris.svg) fixed;
+  background: url(../src/chivasClubGris.svg);
 }
 
 .container section {
@@ -47,7 +47,7 @@
   display: grid;
   -ms-grid-columns: (1fr)[8];
       grid-template-columns: repeat(8, 1fr);
-  grid-gap: 10px;
+  gap: 10px;
   text-align: center;
 }
 
@@ -64,7 +64,6 @@
 
 .trofeos .hola {
   font-size: 1.5em;
-  margin: 1em 0em;
   visibility: hidden;
 }
 
@@ -87,5 +86,106 @@
   display: block;
   width: 1.5%;
   margin: 0 3%;
+}
+
+.trofeos .campeones {
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.trofeos .campeones .trofeo-campeones {
+  margin: 0 1em;
+  width: 60%;
+}
+
+.trofeos .copa-mexico {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.trofeos .copa-mexico .trofeo-copa {
+  width: 70%;
+}
+
+.trofeos .copa-concacaf {
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+.trofeos .copa-concacaf .trofeo-concacaf {
+  width: 70%;
+}
+
+.trofeos .copa-challenger {
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+.trofeos .copa-pentagonales {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.trofeos .copa-pentagonales .trofeo-pentagonales {
+  margin: 0 3em;
+  width: 40%;
+}
+
+.trofeos .copa-pentagonales .trofeo-guadalajara {
+  margin: 0 3em;
+  width: 40%;
+}
+
+.footer {
+  background: url(../src/chivasClubGris.svg);
+}
+
+.footer .textfooter {
+  width: 80%;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.footer .trofeos-footer {
+  text-align: center;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.footer .trofeos-footer #copa {
+  width: 13%;
+}
+
+.footer .trofeos-footer #concacaf {
+  width: 8%;
+}
+
+.footer .trofeos-footer #challenger {
+  width: 8%;
+}
+
+.footer .trofeos-footer #campeones {
+  width: 6%;
+}
+
+.footer .trofeos-footer #liga {
+  width: 10%;
+}
+
+.footer .trofeos-footer img {
+  margin: 0 1em;
+}
+
+.footer .footertext {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 5;
+  text-align: center;
+}
+
+.footer .footertext .imgText {
+  width: 40em;
 }
 /*# sourceMappingURL=main.css.map */
