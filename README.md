@@ -49,14 +49,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* [FullPage.js](https://alvarotrigo.com/fullPage/es/) - TScrolling animation
-* [Anime.js](https://animejs.com/) - Animation
-* [Chivas](https://www.chivasdecorazon.com.mx/) - Data 
+* [Anime.js](https://animejs.com/) - Animacion de los trofeos e interactividad
+* [FullPage.js](https://alvarotrigo.com/fullPage/es/) - Efecto de desplazamiento entre paginas
+* [Chivas](https://www.chivasdecorazon.com.mx/) - Datos extraidos de la web oficial de Chivas
 
 
-Viewport
-Window
-×
-×
-×
 
