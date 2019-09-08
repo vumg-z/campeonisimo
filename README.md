@@ -1,19 +1,62 @@
 # CAMPEONISIMO
-Fue el nombre que se le dio al equipo que representó a Chivas en la etapa comprendida entre 1957 y 1970, pues la hazaña conseguida por este grupo de jugadores es inigualable hasta ahora, ya que se conquistaron:
-
-- 8 Títulos de Liga
-- 2 Copas México
-- 6 Campeón de Campeones
-- 1 vez Campeonísimo
-- 1 título de la Concacaf
-- 1 Copa Challenger
-- 3 Pentagonales Internacionales
-- 1 Torneo de la Ciudad de Guadalajara
-
-En esta pagina se muestran estos titulos de arriba.
+Fue el nombre que se le dio al equipo que representó a Chivas en la etapa comprendida entre 1957 y 1970, esta pagina web es un recordatorio de todos los trofeos que se ganaron en ese año.
 
 ## Screenshot
 ![](src/ss.png)
 
-## DEMO
-(pendiente)
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+- npm
+
+```
+npm install npm@latest -g
+```
+
+### Installing
+
+1. Clone the repo
+
+```
+git clone https://github.com/UrielMendozaG/campeonisimo.git
+```
+
+2. Run npm install inside project root
+
+```
+npm install
+```
+
+3. Explore
+
+```
+Enjoy :)
+```
+
+
+## Contributors
+
+* **Uriel Mendoza** - *Initial work* -
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* [FullPage.js](https://alvarotrigo.com/fullPage/es/) - TScrolling animation
+* [Anime.js](https://animejs.com/) - Animation
+* [Chivas](https://www.chivasdecorazon.com.mx/) - Data 
+
+
+Viewport
+Window
+×
+×
+×
+
