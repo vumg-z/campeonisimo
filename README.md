@@ -1,6 +1,8 @@
 # CAMPEONISIMO
 Fue el nombre que se le dio al equipo que representó a Chivas en la etapa comprendida entre 1957 y 1970, esta pagina web es un recordatorio de todos los trofeos que se ganaron en ese año.
 
+[Campeonisimo](http://elcampeonisimo.com/)
+
 ## Screenshot
 ![](src/ss.png)
 
