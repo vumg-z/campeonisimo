@@ -188,4 +188,72 @@
 .footer .footertext .imgText {
   width: 40em;
 }
+
+@media only screen and (max-width: 400px) {
+  .trofeos .secondary-text {
+    position: absolute;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
+  .trofeos .trofeos-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    grid-row-end: 6;
+  }
+  .trofeos .trofeos-container img {
+    width: 60%;
+  }
+  .trofeos .campeones {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .trofeos .campeones .trofeo-campeones {
+    margin: 1em 1em;
+    width: 50%;
+  }
+  .trofeos .copa-mexico {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .trofeos .copa-mexico .trofeo-copa {
+    width: 70%;
+  }
+  .trofeos .copa-concacaf {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .trofeos .copa-concacaf .trofeo-concacaf {
+    width: 70%;
+  }
+  .trofeos .copa-challenger {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .trofeos .copa-pentagonales {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  .trofeos .copa-pentagonales .trofeo-pentagonales {
+    margin: 0 3em;
+    width: 40%;
+  }
+  .trofeos .copa-pentagonales .trofeo-guadalajara {
+    margin: 0 3em;
+    width: 40%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
