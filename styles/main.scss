@@ -160,15 +160,19 @@ $background: url(../src/chivasClubGris.svg);
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .trofeos {
+    .hola {
+      font-size: 1.5em;
+      display: none;
+    }
     .secondary-text {
       position: absolute;
       align-self: baseline;
     }
     .trofeos-container {
       grid-template-columns: repeat(2, 1fr);
-      @include gridRowStart(6, 6);
+      @include gridRowStart(4, 4);
       img {
         width: 60%;
       }
@@ -213,6 +217,48 @@ $background: url(../src/chivasClubGris.svg);
       .trofeo-guadalajara {
         margin: 0 3em;
         width: 40%;
+      }
+    }  
+  }
+
+  .footer {
+    background: $background;
+    .textfooter {
+      position: absolute;
+      width: 100%;
+      @include gridRowStart(2, 2);
+    }
+    .trofeos-footer {
+      text-align: center;
+      @include gridRowStart(3, 3);
+      position: absolute;
+      #copa {
+        width: 13%;
+      }
+      #concacaf {
+        width: 8%;
+      }
+      #challenger {
+        width: 8%;
+      }
+      #campeones {
+        width: 6%;
+      }
+      #liga {
+        width: 10%;
+      }
+  
+      img {
+        margin: 0 1em;
+      }
+    }
+  
+    .footertext {
+      @include gridRowStart(5, 5);
+      text-align: center;
+      position: absolute;
+      .imgText {
+        width: 70%;
       }
     }
   }

@@ -189,7 +189,11 @@
   width: 40em;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
+  .trofeos .hola {
+    font-size: 1.5em;
+    display: none;
+  }
   .trofeos .secondary-text {
     position: absolute;
     -ms-flex-item-align: baseline;
@@ -198,9 +202,9 @@
   .trofeos .trofeos-container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-row: 6;
-        grid-row-start: 6;
-    grid-row-end: 6;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
   }
   .trofeos .trofeos-container img {
     width: 60%;
@@ -254,6 +258,51 @@
   .trofeos .copa-pentagonales .trofeo-guadalajara {
     margin: 0 3em;
     width: 40%;
+  }
+  .footer {
+    background: url(../src/chivasClubGris.svg);
+  }
+  .footer .textfooter {
+    position: absolute;
+    width: 100%;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .footer .trofeos-footer {
+    text-align: center;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+    position: absolute;
+  }
+  .footer .trofeos-footer #copa {
+    width: 13%;
+  }
+  .footer .trofeos-footer #concacaf {
+    width: 8%;
+  }
+  .footer .trofeos-footer #challenger {
+    width: 8%;
+  }
+  .footer .trofeos-footer #campeones {
+    width: 6%;
+  }
+  .footer .trofeos-footer #liga {
+    width: 10%;
+  }
+  .footer .trofeos-footer img {
+    margin: 0 1em;
+  }
+  .footer .footertext {
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 5;
+    text-align: center;
+    position: absolute;
+  }
+  .footer .footertext .imgText {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=main.css.map */
