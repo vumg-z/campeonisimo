@@ -194,6 +194,9 @@
     font-size: 1.5em;
     display: none;
   }
+  .trofeos .trofeo {
+    width: 50%;
+  }
   .trofeos .secondary-text {
     position: absolute;
     -ms-flex-item-align: baseline;
@@ -206,16 +209,13 @@
         grid-row-start: 4;
     grid-row-end: 4;
   }
-  .trofeos .trofeos-container img {
-    width: 60%;
-  }
   .trofeos .campeones {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
   .trofeos .campeones .trofeo-campeones {
     margin: 1em 1em;
-    width: 50%;
+    width: 40%;
   }
   .trofeos .copa-mexico {
     -ms-grid-row: 4;
@@ -225,7 +225,7 @@
         grid-template-columns: repeat(2, 1fr);
   }
   .trofeos .copa-mexico .trofeo-copa {
-    width: 70%;
+    width: 60%;
   }
   .trofeos .copa-concacaf {
     -ms-grid-row: 4;
@@ -235,7 +235,7 @@
         grid-template-columns: repeat(1, 1fr);
   }
   .trofeos .copa-concacaf .trofeo-concacaf {
-    width: 70%;
+    width: 60%;
   }
   .trofeos .copa-challenger {
     -ms-grid-row: 4;

@@ -166,6 +166,9 @@ $background: url(../src/chivasClubGris.svg);
       font-size: 1.5em;
       display: none;
     }
+    .trofeo {
+      width: 50%;
+    }
     .secondary-text {
       position: absolute;
       align-self: baseline;
@@ -173,16 +176,13 @@ $background: url(../src/chivasClubGris.svg);
     .trofeos-container {
       grid-template-columns: repeat(2, 1fr);
       @include gridRowStart(4, 4);
-      img {
-        width: 60%;
-      }
     }
 
     .campeones {
       grid-template-columns: repeat(2, 1fr);
       .trofeo-campeones {
         margin: 1em 1em;
-        width: 50%;
+        width: 40%;
       }
     }
 
@@ -190,7 +190,7 @@ $background: url(../src/chivasClubGris.svg);
       @include gridRowStart(4, 4);
       grid-template-columns: repeat(2, 1fr);
       .trofeo-copa {
-        width: 70%;
+        width: 60%;
       }
     }
 
@@ -198,7 +198,7 @@ $background: url(../src/chivasClubGris.svg);
       @include gridRowStart(4, 4);
       grid-template-columns: repeat(1, 1fr);
       .trofeo-concacaf {
-        width: 70%;
+        width: 60%;
       }
     }
 
@@ -218,7 +218,7 @@ $background: url(../src/chivasClubGris.svg);
         margin: 0 3em;
         width: 40%;
       }
-    }  
+    }
   }
 
   .footer {
@@ -247,12 +247,12 @@ $background: url(../src/chivasClubGris.svg);
       #liga {
         width: 10%;
       }
-  
+
       img {
         margin: 0 1em;
       }
     }
-  
+
     .footertext {
       @include gridRowStart(5, 5);
       text-align: center;
