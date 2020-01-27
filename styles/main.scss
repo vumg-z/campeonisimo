@@ -30,6 +30,9 @@ $background: url(../src/chivasClubGris.svg);
       width: 100%;
       @include gridRowStart(4, 4);
       align-self: baseline;
+      .description, .campeonisimo{
+        width: 100%;
+      }
     }
     .arrow {
       width: 2%;
@@ -161,6 +164,11 @@ $background: url(../src/chivasClubGris.svg);
 }
 
 @media only screen and (max-width: 450px) {
+
+  .campeonisimo, .description{
+    font-size: 2rem;
+  }
+
   .trofeos {
     .hola {
       font-size: 1.5em;

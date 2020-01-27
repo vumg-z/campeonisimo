@@ -32,6 +32,10 @@
       align-self: baseline;
 }
 
+.container section .mainText .description, .container section .mainText .campeonisimo {
+  width: 100%;
+}
+
 .container section .arrow {
   width: 2%;
   -ms-grid-row: 6;
@@ -190,6 +194,9 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .campeonisimo, .description {
+    font-size: 2rem;
+  }
   .trofeos .hola {
     font-size: 1.5em;
     display: none;
