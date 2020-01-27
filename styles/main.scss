@@ -163,12 +163,18 @@ $background: url(../src/chivasClubGris.svg);
   }
 }
 
+$text-width: 180% !important;
+
 @media only screen and (max-width: 450px) {
 
-  .campeonisimo, .description{
-    font-size: 2rem;
+  .mainText{
+    width: $text-width
   }
 
+  .arrow{
+    width: 5% !important;
+
+  }
   .trofeos {
     .hola {
       font-size: 1.5em;
@@ -180,6 +186,7 @@ $background: url(../src/chivasClubGris.svg);
     .secondary-text {
       position: absolute;
       align-self: baseline;
+      width: $text-width
     }
     .trofeos-container {
       grid-template-columns: repeat(2, 1fr);
@@ -233,7 +240,7 @@ $background: url(../src/chivasClubGris.svg);
     background: $background;
     .textfooter {
       position: absolute;
-      width: 100%;
+      width: 122% !important;
       @include gridRowStart(2, 2);
     }
     .trofeos-footer {

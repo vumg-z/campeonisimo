@@ -194,8 +194,11 @@
 }
 
 @media only screen and (max-width: 450px) {
-  .campeonisimo, .description {
-    font-size: 2rem;
+  .mainText {
+    width: 180% !important;
+  }
+  .arrow {
+    width: 5% !important;
   }
   .trofeos .hola {
     font-size: 1.5em;
@@ -208,6 +211,7 @@
     position: absolute;
     -ms-flex-item-align: baseline;
         align-self: baseline;
+    width: 180% !important;
   }
   .trofeos .trofeos-container {
     -ms-grid-columns: (1fr)[2];
@@ -271,7 +275,7 @@
   }
   .footer .textfooter {
     position: absolute;
-    width: 100%;
+    width: 122% !important;
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 2;
